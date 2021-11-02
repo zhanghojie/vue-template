@@ -1,0 +1,212 @@
+.container {
+  width: 100%;
+  height: 100%;
+  .top {
+    width: 100%;
+    height: 100%;
+    background-color: #c42c32;
+    box-sizing: border-box;
+    & > :first-child {
+      height: 100%;
+      width: 100%;
+      padding: 0 40px;
+      padding-top: 40px;
+      box-sizing: border-box;
+      h4 {
+        height: 40px;
+        line-height: 40px;
+        font-family: PingFangSC-Medium;
+        font-size: 30px;
+        color: #c7deff;
+      }
+      & > div {
+        height: 100%;
+        width: 100%;
+        line-height: 30px;
+        box-sizing: border-box;
+        padding: 20px 30px;
+        border-radius: 14px 14px 0 0;
+        border: 6px solid #ff9b9f;
+        border-bottom: none;
+        font-family: PingFangSC-Regular;
+        font-size: 25px;
+        color: #333;
+        background-color: #fff;
+        position: relative;
+        & > :first-child {
+          font-family: PingFangSC-Regular;
+          font-size: 28px;
+          color: #1677ff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 20px;
+
+          div {
+            width: 158px;
+            height: 46px;
+            line-height: 46px;
+            border: 1px solid #1677ff;
+            border-radius: 23px;
+            font-family: PingFangSC-Regular;
+            font-size: 25px;
+            color: #1677ff;
+            text-align: center;
+          }
+        }
+        .jd {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          font-family: HelveticaNeue;
+          font-size: 17px;
+          color: #999999;
+          text-align: left;
+          padding-bottom: 10px;
+          .van-progress {
+            width: 90%;
+          }
+        }
+        p {
+          padding-bottom: 15px;
+          line-height: 30px;
+        }
+        h3 {
+          height: 35px;
+          width: 100%;
+          font-family: PingFangSC-Medium;
+          font-size: 25px;
+          color: #333333;
+          font-weight: bold;
+        }
+        .jc {
+          width: 100%;
+          height: 100%;
+          div {
+            height: 35px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            font-family: PingFangSC-Regular;
+            font-size: 25px;
+            color: #333333;
+            p {
+              padding-bottom: 0;
+            }
+            :first-child {
+              width: 50%;
+            }
+            :last-child {
+              width: 50%;
+            }
+          }
+        }
+        .abs {
+          position: absolute;
+          right: 40px;
+          bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    height: 100%;
+    // background-color: #fff;
+    & > :first-child {
+      padding-top: 40px;
+      padding-bottom: 166px;
+      width: 100%;
+      height: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 20px;
+      :nth-child(2) {
+        height: 50px;
+        font-size: 36px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 50px;
+        padding-top: 20px;
+      }
+      :nth-child(2) + p {
+        font-size: 26px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+      }
+    }
+
+    .bot-foxed {
+      width: 100%;
+      height: 100%;
+      // background-color: #fff;
+
+      .foxed {
+        width: 100%;
+        height: 166px;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        padding: 0 24px;
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          // row-gap: 5px;
+          justify-content: center;
+          img {
+            height: 100px;
+          }
+          p {
+            margin-top: 10px;
+            font-size: 24px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #999999;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/deep/.van-nav-bar {
+  background-color: #c42c32;
+
+  .van-nav-bar__title {
+    color: #fff;
+  }
+}
+/deep/ .van-nav-bar .van-icon {
+  color: #fff;
+}
+
+/deep/ .van-steps {
+  background-color: transparent;
+}
+/deep/ .van-step__icon--active {
+  color: #1677ff;
+  font-size: 18px;
+}
+
+/deep/.van-step--vertical {
+  .van-step__circle-container {
+    top: 26px;
+  }
+}
+/deep/[class*="van-hairline"]::after {
+  border: none;
+}

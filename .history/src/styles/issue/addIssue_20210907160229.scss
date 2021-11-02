@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  height: 100%;
+  .ms {
+    width: 100%;
+    height: 39px;
+    padding-top: 15px;
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #333333;
+    padding-left: 35px;
+    background-color: #fff;
+  }
+  .upload {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 33px 28px 5px 28px;
+    box-sizing: border-box;
+  }
+  .add {
+    padding: 0 17px;
+    background: #fff;
+    height: 106px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    .btn {
+      color: #fff;
+      background-image: linear-gradient(270deg, #fab961 0%, #f76b1c 55%);
+      height: 72px;
+      border-radius: 36px;
+      font-family: PingFangSC-Regular;
+      font-size: 28px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}
+/deep/.van-nav-bar {
+  background-color: #c42c32;
+
+  .van-nav-bar__title {
+    color: #fff;
+  }
+}
+
+/deep/ .van-nav-bar .van-icon {
+  color: #fff;
+}
+/deep/.van-uploader__preview-image {
+  width: 111px;
+  height: 111px;
+}
+/deep/.van-uploader__upload {
+  width: 111px;
+  height: 111px;
+}

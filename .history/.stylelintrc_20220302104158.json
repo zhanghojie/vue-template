@@ -1,0 +1,6 @@
+{
+  "extends":"styleline-config-standard",
+  "rules": {
+    "indentation": 2
+  }
+}

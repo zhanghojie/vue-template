@@ -4,11 +4,15 @@
   "description": "",
   "author": "",
   "private": true,
+  "engines": {
+    "node": "14.x || 16.x"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "vue-cli-service build --mode test",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "preinstall": "only-allow npm"
   },
   "dependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.14.5",
@@ -36,6 +40,7 @@
     "html-webpack-plugin": "^5.3.2",
     "image-webpack-loader": "^7.0.1",
     "node-sass": "^4.13.1",
+    "only-allow": "^1.1.1",
     "postcss-px-to-viewport": "^1.1.1",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
